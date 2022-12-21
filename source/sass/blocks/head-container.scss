@@ -1,0 +1,11 @@
+.head-container {
+  padding-top: 30px;
+  padding-bottom: 51px;
+  color: $color-default-white;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  @include vp-1199 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}

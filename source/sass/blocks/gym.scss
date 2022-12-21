@@ -1,0 +1,121 @@
+.gym {
+  padding: 120px 0 235px;
+
+  @include vp-1199 {
+    padding: 100px 45px 183px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.gym__wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  justify-content: space-between;
+  position: relative;
+
+  @include vp-1199 {
+    padding-right: 0;
+    flex-direction: column;
+  }
+}
+
+.gym__about {
+  width: 38%;
+  padding-left: 79px;
+  text-align: left;
+
+  @include vp-1199 {
+    width: 75.6%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding: 0;
+    padding-right: 17px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  h2 {
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 7px;
+    font-family: $ff-titles;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 4px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+    @include vp-767 {
+      width: 92%;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 27px;
+
+    @include vp-1199 {
+      margin-bottom: 32px;
+      padding-left: 15px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 23px;
+      padding-left: 0;
+    }
+  }
+}
+
+.gym__hidden-text {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.gym__img {
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+
+  img {
+    @include vp-1199 {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 16/8.15;
+    }
+
+    @include vp-767 {
+      aspect-ratio: 3/2.97;
+    }
+  }
+}
