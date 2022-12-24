@@ -12,7 +12,7 @@
   <link rel="preload" href="./fonts/alumnisansmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/alumnisanssemibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preLload" href="./fonts/robotocondensedregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preLload" href="./fonts/robotocondensedbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preLload" href="./fonts/rouble.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,7 +29,9 @@
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__tel" href="tel:88005555555">8-800-555-55-55</a>
+                  <div class="main-nav__tel">
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -66,11 +68,13 @@
           <div class="gym__about">
             <h2>Тренажерный зал</h2>
             <span>Просторный зал площадью 900 кв/м</span>
-            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья.
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+              тела и&nbsp;здоровья.
               Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
             <p class="gym__hidden-text">
-              В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть
-несколько оборудованных залов для различных видов групповых занятий.</p>
+              В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
           <div class="gym__img">
             <picture>
@@ -80,17 +84,182 @@
           </div>
           <div class="gym__movie movie movie--enabled">
             <a class="movie__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-            <picture>
-              <source type="image/webp" srcset="img/movie.webp 1x, img/movie@2x.webp 2x">
-              <img class="movie__back" src="img/movie.jpg" srcset="img/movie@2x.jpg 2x" width="364" height="228"
-                alt="Фоновое фото спортзала у видео.">
-            </picture>
+              <picture>
+                <source type="image/webp" srcset="img/movie.webp 1x, img/movie@2x.webp 2x">
+                <img class="movie__back" src="img/movie.jpg" srcset="img/movie@2x.jpg 2x" width="364" height="228"
+                  alt="Фоновое фото спортзала у видео.">
+              </picture>
 
             </a>
             <button class="movie__button" aria-label="Запустить видео.">
               <img src="img/svg/playbtn.svg" width="100" height="100" alt="Изображение кнопки Play.">
             </button>
 
+          </div>
+        </div>
+      </section>
+      <section class="membership">
+        <div class="membership__container container">
+          <div class="membership__wrapper">
+            <h2>Абонементы</h2>
+            <div class="membership__tabs">
+              <ul class="membership__duration-list">
+                <li class="membership__duration-item">
+                  <button class="membership__duration-button is-active" type="button"
+                    data-duration="month">1месяц</button>
+                </li>
+                <li class="membership__duration-item">
+                  <button class="membership__duration-button" type="button" data-duration="halfyear">6месяцев</button>
+                </li>
+                <li class="membership__duration-item">
+                  <button class="membership__duration-button" type="button" data-duration="year" data-duration="year">12
+                    месяцев</button>
+                </li>
+              </ul>
+            </div>
+            <div class="membership__tab-content is-active" id="month">
+              <ul class="membership__list membership__list--month">
+                <li class="membership__item">
+                  <h3>С тренером</h3>
+                  <span>12 занятий</span>
+                  <p class="membership__price" data-price="5000">5000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item">
+                  <h3>Дневной</h3>
+                  <span>с 8:00 до 17:00</span>
+                  <p class="membership__price" data-price="1700">1700 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item">
+                  <h3>Полный день</h3>
+                  <span>с 8:00 до 22:00 </span>
+                  <p class="membership__price" data-price="2700">2700 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="membership__tab-content" id="halfyear">
+              <ul class="membership__list membership__list--halfyear">
+                <li class="membership__item">
+                  <h3>С тренером</h3>
+                  <span>72 занятия</span>
+                  <p class="membership__price" data-price="24000">24000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item">
+                  <h3>Дневной</h3>
+                  <span>с 8:00 до 17:00</span>
+                  <p class="membership__price" data-price="8000">8000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item">
+                  <h3>Полный день</h3>
+                  <span>с 8:00 до 22:00 </span>
+                  <p class="membership__price" data-price="15000">15000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="membership__tab-content" id="year">
+              <ul class="membership__list membership__list--year">
+                <li class="membership__item">
+                  <h3>С тренером</h3>
+                  <span>144 занятия</span>
+                  <p class="membership__price" data-price="44000">44000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item">
+                  <h3>Дневной</h3>
+                  <span>с 8:00 до 17:00</span>
+                  <p class="membership__price" data-price="14000">14000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__item">
+                  <h3>Полный день</h3>
+                  <span>с 8:00 до 22:00 </span>
+                  <p class="membership__price" data-price="20000">20000 <span>₽</span></p>
+                  <a class="membership__button" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="membership__backimg">
+              <picture>
+                <source type="image/webp" srcset="img/weight-plates.webp 1x, img/weight-plates@2x.webp 2x">
+                <img src="img/weight-plates.png" srcset="img/weight-plates@2x.png 2x" width="504" height="481"
+                  alt="Фото двух блинов для штанги.">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="promo">
+        <div class="promo__container container">
+          <div class="promo__wrapper">
+            <div class="promo__info">
+              <div class="promo__text-wrapper">
+                <h2>SUPER Games</h2>
+                <dl class="promo__list">
+                  <dt>
+                    <span>Дата</span>
+                  </dt>
+                  <dd>
+                    <span class="promo__date-number">7</span>
+                    <p class="promo__month">Марта 2019</p>
+                  </dd>
+                  <dt>
+                    <span>Время</span>
+                  </dt>
+                  <dd>
+                    <span>12:00</span>
+                  </dd>
+                </dl>
+              </div>
+              <p>Ежегодные соревнования по CrossFit</p>
+              <a class="promo__link" href="#">заполнить заявку</a>
+            </div>
+            <div class="promo__img">
+              <picture>
+                <source type="image/webp" srcset="img/crossfit.webp 1x, img/crossfit@2x.webp 2x">
+                <img src="img/crossfit.jpg" srcset="img/crossfit@2x.jpg 2x" width="660" height="500"
+                  alt="Фото спортсмена, выполняющего упражнение.">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trainers">
+        <div class="trainers__container container">
+          <h2>Тренеры</h2>
+          <div class="trainers__wrapper">
+            <div class="trainers__card card">
+              <div class="card__wrapper">
+                <h3>Анна Павлова</h3>
+                <div class="card__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                    <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
+                      alt="Фото трененра Анны Павловой.">
+                  </picture>
+                </div>
+                <div class="card__info">
+                  <!-- <h3>Анна Павлова</h3> -->
+                  <span>CrossFit</span>
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <p>Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="card__item">
+                      <p>Победитель чемпионата России по CrossFit </p>
+                    </li>
+                    <li class="card__item">
+                      <p>Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

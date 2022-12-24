@@ -1,0 +1,364 @@
+.membership {
+  // position: relative;
+  padding: 120px 0;
+  background-color: $color-ghost-white;
+  overflow-x: clip;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: $ff-titles;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @include vp-1199 {
+      margin-bottom: 6px;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 15px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.membership__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+
+  @include vp-1199 {
+    padding: 0 118px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
+.membership__backimg {
+  position: absolute;
+  width: 470px;
+  height: 421px;
+  bottom: -193px;
+  right: -273px;
+  z-index: -1;
+  // background-image: url("../img/weight-plates.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  img {
+    display: block;
+    object-fit: contain;
+  }
+}
+
+.membership__duration-list {
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  // justify-content: center;
+  // border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @include vp-1199 {
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 35px;
+  }
+}
+
+.membership__duration-list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
+  bottom: 0;
+  left: 0;
+}
+
+.membership__duration-button {
+  display: block;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 30%;
+  color: rgba(16, 38, 84, 0.5);
+  border: none;
+  background-color: $color-transparent;
+  position: relative;
+  cursor: pointer;
+
+  @include hover {
+    color: $color-sapphire;
+    box-shadow: 6px 10px 7px 3px rgba(16, 38, 84, 0.5);
+  }
+
+  @include focus {
+    box-shadow: 0 0 2px 4px rgba(16, 38, 84, 0.5);
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27%;
+
+    @include hover-focus {
+      color: rgba(16, 38, 84, 0.5);
+      box-shadow: none;
+
+      &.focus-visible:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24%;
+  }
+}
+
+.membership__duration-button:active {
+  opacity: 0.5;
+}
+
+.membership__duration-button.is-active {
+  // position: absolute;
+  // content: "";
+  // width: 100%;
+  // height: 2px;
+  // background: #d10a42;
+  // bottom: -2px;
+  // right: 0;
+  // left: 0;
+  color: $color-sapphire;
+  border-bottom: 3px solid #d10a42;
+
+  @include hover {
+    box-shadow: none;
+  }
+}
+
+.membership__duration-item:not(:last-child) {
+  margin-right: 46px;
+
+  @include vp-1199 {
+    margin-right: 54px;
+  }
+
+  @include vp-767 {
+    margin-right: 45px;
+  }
+}
+
+.membership__list {
+  // width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2.5rem;
+
+  // @include vp-1199 {
+  //   grid-template-columns: repeat(auto-fit, minmax(442px, 1fr));
+  // }
+
+  @include vp-767 {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+.membership__tab-content {
+  display: none;
+}
+
+.membership__tab-content.is-active {
+  display: block;
+  width: 100%;
+}
+
+.membership__item {
+  padding: 3.4rem 4.2rem;
+  text-align: center;
+  background-color: $color-default-white;
+  border: 7px solid $color-default-white;
+  cursor: pointer;
+
+  @include hover {
+    border: 7px solid transparent;
+    border-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    border-image-slice: 1;
+
+    .membership__button {
+      color: $color-default-white;
+      background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+      border: none;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 3.4rem 6.5rem;
+
+    @include hover-focus {
+      border: 7px solid $color-default-white;
+      border-image: none;
+
+      .membership__button {
+        color: $color-sapphire;
+        background-image: none;
+        border: 2px solid #102654;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 2.6rem 1.75rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.63rem;
+    line-height: 2.5rem;
+
+    @include vp-1199 {
+      font-size: 1.63rem;
+      line-height: 1.8rem;
+    }
+
+    @include vp-767 {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin-bottom: 19px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #495a7d;
+
+    @include vp-767 {
+      margin-bottom: 14px;
+    }
+  }
+
+  p {
+    padding-top: 40px;
+    margin: 0 0 36px;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 5.6rem;
+    color: $color-egyptian-blue;
+    position: relative;
+    z-index: 2;
+
+    @include vp-767 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+    }
+
+    span {
+      margin: 0;
+      font-family: "Rouble", "Arial", sans-serif;
+      font-size: 3.75rem;
+      line-height: 5.6rem;
+      color: $color-sapphire;
+    }
+  }
+}
+
+.membership__item p::after {
+  content: attr(data-price) "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: $ff-main;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  text-align: center;
+  opacity: 0.48;
+  z-index: -1;
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.membership__item:focus-within {
+  border: 7px solid transparent;
+  border-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  border-image-slice: 1;
+
+  @include vp-1199 {
+    border: 7px solid $color-default-white;
+    border-image: none;
+    border-image-slice: unset;
+  }
+}
+
+.membership__button {
+  display: block;
+  padding: 23px 43px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $color-sapphire;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #102654;
+  user-select: none;
+
+  @include focus {
+    color: $color-default-white;
+    background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: none;
+  }
+
+  @include vp-1199 {
+    padding: 23px 5px;
+  }
+}
+
+.membership__button:active {
+  opacity: 0.8;
+}
