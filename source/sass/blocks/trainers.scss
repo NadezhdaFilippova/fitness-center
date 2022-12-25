@@ -1,5 +1,17 @@
 .trainers__container {
+  padding: 0 0 91px 0;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+
   h2 {
+    margin: 0;
+    margin-bottom: 48px;
     font-family: $ff-titles;
     font-weight: 600;
     font-size: 54px;
@@ -7,11 +19,14 @@
     letter-spacing: 0.03em;
 
     @include vp-1199 {
+      margin-bottom: 31px;
       font-size: 42px;
       line-height: 50px;
+      text-align: center;
     }
 
     @include vp-767 {
+      margin-bottom: 50px;
       font-size: 32px;
       line-height: 38px;
     }
@@ -20,4 +35,12 @@
 
 .trainers__wrapper {
   display: flex;
+
+  @include vp-1199 {
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    padding: 0 32px;
+  }
 }

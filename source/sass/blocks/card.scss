@@ -3,10 +3,26 @@
   color: $color-default-white;
   cursor: pointer;
 
+  @include vp-1199 {
+    //временно, для PF карточки
+    width: 226px;
+    height: 274px;
+  }
+
   @include hover {
     h3 {
-      top: 5%;
+      top: 17.2%;
+      left: 20%;
       z-index: 4;
+
+      @include vp-1199 {
+        left: 21%;
+      }
+
+      @include vp-767 {
+        top: 15%;
+        left: 18%;
+      }
     }
 
     .card__info {
@@ -25,8 +41,8 @@
   }
 }
 
-.card:focus-within .card__info {
-  opacity: 1;
+.card__wrapper:focus-within .card__info {
+  display: flex;
 }
 
 .card__info {
@@ -36,32 +52,43 @@
   height: 100%;
   top: 0;
   left: 0;
-  padding: 58px 46px 33px 35px;
-  display: none;
+  padding: 75px 46px 33px 40px;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   background: rgba(16, 38, 84, 0.89);
-  // overflow-y: scroll;
+  overflow-y: scroll;
   // opacity: 0;
 
   // @include vp-1023 {
   //   padding: 30px 35px 35px;
   // }
 
-  // @include vp-767 {
-  //   padding: 30px 22px 35px 25px;
-  // }
+  @include vp-767 {
+    padding: 65px 19px 35px;
+  }
 
   span {
+    margin-bottom: 18px;
+    padding-left: 6px;
     font-size: 16px;
     line-height: 24px;
     color: #b6bdcc;
     text-align: center;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+
+    @include vp-767 {
+      margin-bottom: 20px;
+    }
   }
 }
 
 .card__list {
   margin: 0;
+  padding: 0;
   padding-left: 30px;
   font-size: 14px;
   line-height: 21px;
@@ -72,4 +99,16 @@
   width: 100%;
   object-fit: cover;
   // aspect-ratio: 1/1.5;
+
+  @include vp-1199 {
+    //временно, для PF карточки
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    //временно, для PF карточки
+    width: 226px;
+    height: 274px;
+  }
 }
