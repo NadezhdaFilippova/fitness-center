@@ -352,20 +352,19 @@
             <ul class="discounts__list">
               <li class="discounts__item discounts__item--primary">
                 <!-- <div class="discounts__item-wrapper discounts__item-wrapper--primary "> -->
-                  <div class="discounts__summary">
-                    <h3>Год</h3>
-                    <b>4999</b>
-                    <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-                    <a class="discounts__link discounts__link--primary" href="#"> подробнее</a>
-                  </div>
-                  <div class="discounts__img discounts__img--primary">
-                    <picture>
-                      <source type="image/webp"
-                        srcset="img/discounts-primary.webp 3x, img/discounts-primary@2x.webp 2x">
-                      <img src="img/discounts-primary.jpg" srcset="img/discounts-primary@2x.jpg 2x" width="399"
-                        height="462" alt="Фото спортсменки на фоне голубого неба.">
-                    </picture>
-                  </div>
+                <div class="discounts__summary">
+                  <h3>Год</h3>
+                  <b>4999</b>
+                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <a class="discounts__link discounts__link--primary" href="#"> подробнее</a>
+                </div>
+                <div class="discounts__img discounts__img--primary">
+                  <picture>
+                    <source type="image/webp" srcset="img/discounts-primary.webp 3x, img/discounts-primary@2x.webp 2x">
+                    <img src="img/discounts-primary.jpg" srcset="img/discounts-primary@2x.jpg 2x" width="399"
+                      height="462" alt="Фото спортсменки на фоне голубого неба.">
+                  </picture>
+                </div>
                 <!-- </div> -->
               </li>
               <li class="discounts__item discounts__item--secondary">
@@ -390,13 +389,173 @@
           </div>
         </div>
       </section>
+      <section class="reviews">
+        <div class="reviews__container container">
+          <h2>Отзывы</h2>
+          <div class="reviews__wrapper">
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <div class="reviews__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviewer.webp 3x, img/reviewer@2x.webp 2x">
+                    <img src="img/reviewer.png" srcset="img/reviewer@2x.png 2x" width="80" height="80"
+                      alt="Фото Ольги Орловой.">
+                  </picture>
+                </div>
+                <blockquote class="reviews__text">
+                  <cite>Анна Орлова</cite>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                    обновляют,
+                    персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-1.webp 3x, img/trainer-1@2x.webp 2x">
+                    <img src="img/trainer-1.png" srcset="img/trainer-1@2x.png 2x" width="80" height="80"
+                      alt="Фото Светланы Павловой.">
+                  </picture>
+                </div>
+                <blockquote class="reviews__text">
+                  <cite>Светлана Павлова</cite>
+                  <p>&laquo;Хожу уже два года в&nbsp;этот зал)
+                    Для меня огромный плюс в&nbsp;том, что находится этот зал недалеко от&nbsp;дома. Удобно добираться,
+                    есть
+                    бассейн(что редко найдешь в&nbsp;фитнес залах), адекватные цены на&nbsp;абонемент, хороший персонал
+                    и&nbsp;тренера
+                    в
+                    зале всегда помогут и&nbsp;подскажут, ремонт сделан относительно недавно, удобные ящички, хорошее
+                    оборудование, много тренажеров.&raquo;</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/introman.webp 3x, img/introman@2x.webp 2x">
+                    <img src="img/introman.png" srcset="img/introman@2x.png 2x" width="80" height="80"
+                      alt="Фото Стванислава Лебедева.">
+                  </picture>
+                </div>
+                <blockquote class="reviews__text">
+                  <cite>Станислав Лебедев</cite>
+                  <p>&laquo;Просторный тренажерный зал с&nbsp;огромным количеством разнообразного спортивного
+                    оборудования, подойдет
+                    как и&nbsp;спортсменам-штангистам, так и&nbsp;людям, занимающимся восстановлением после травм ода.
+                    В&nbsp;комплексе
+                    есть бассейн с&nbsp;всегда чистой водой и&nbsp;дежурным тренером. Доброжелательный и&nbsp;вежливый
+                    персонал на
+                    ресепшне и&nbsp;в&nbsp;отделе продаж, просторная раздевалка, сауна, душевые.&raquo;</p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="double-contacts contacts">
+        <section class="contacts__user user-contacts">
+          <div class="user-contacts__wrapper">
+            <h2>Бесплатное занятие</h2>
+            <form class="user-contacts__form user-form" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="user-form__list">
+                <li class="user-form__item">
+                  <label for="user-name" class="visually-hidden">Ввведите Ваше Имя.</label>
+                  <input type="text" id="user-name" minlength="1" name="name" placeholder="Имя" required>
+                </li>
+                <li class="user-form__item">
+                  <label for="user-tel" class="visually-hidden">Ввведите Ваш номер телефона.</label>
+                  <input type="number" id="user-tel" name="tel" placeholder="Телефон" required>
+                </li>
+              </ul>
+              <button class="user-form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts__gym gym-contacts">
+          <div class="gym-contacts__wrapper">
+            <h2>Контакты</h2>
+            <ul class="gym-contacts__list">
+              <li class="gym-contacts__item">
+                <h3>Адрес:</h3>
+                <address class="gym-contacts__address">г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+              <li class="gym-contacts__item">
+                <h3>График работы:</h3>
+                <p class="gym-contacts__work-mode">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="gym-contacts__item">
+                <h3>Телефон:</h3>
+                <a class="gym-contacts__tel" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+              <li class="gym-contacts__item">
+                <h3>Email:</h3>
+                <a class="gym-contacts__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class="main-footer">
+        <div class="main-footer__container container">
+          <nav class="footer__nav footer-nav">
+            <a class="footer-nav__logo" href="#">
+              <img src="img/svg/logo.svg" width="88" height="32" alt="Логотип Supergym.">
+            </a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link">Услуги</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link">Абонементы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link">Акции</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link">Тренеры</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link">Расписание</a>
+              </li>
+            </ul>
+            <div class="main-footer__social social">
+              <h3 class="visually-hidden">Мы в соцсетях.</h3>
+              <ul class="social__list">
+                <li class="social__item">
+                  <h4 class="visually-hidden">Мы Вконтакте.</h4>
+                  <a class="social__link social__link--vk">
+                    <svg width="12" height="7" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <h4 class="visually-hidden">Мы Одноклассниках.</h4>
+                  <a class="social__link social__link--ok">
+                    <svg width="9" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <h4 class="visually-hidden">Мы в Реддит.</h4>
+                  <a class="social__link social__link--reddit">
+                    <svg width="14" height="14" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
     </footer>
   </div>
-
-  <script src="js/vendor.min.js"></script>
+  <script src="js/vendor.min.js">
+  </script>
   <script src="js/main.min.js"></script>
 </body>
 

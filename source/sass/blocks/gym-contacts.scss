@@ -1,0 +1,123 @@
+.gym-contacts {
+  width: 50%;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.gym-contacts__wrapper {
+  padding: 56px 0 63px 124px;
+  border-top: 1px solid #74819c;
+  // padding-left: 124px;
+
+  @include vp-1199 {
+    padding: 62px 0 62px 13.2%;
+  }
+
+  @include vp-767 {
+    padding: 63px 0;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 38px;
+    margin-left: -3px;
+    font-family: $ff-titles;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+
+    @include vp-1199 {
+      margin-bottom: 31px;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 34px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.gym-contacts__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(min-content, 230px) minmax(min-content, 166px);
+  grid-template-rows: repeat(2, min-content);
+  grid-auto-flow: column;
+  column-gap: 60px;
+  row-gap: 19px;
+  list-style-type: none;
+  position: relative;
+
+  @include vp-1199 {
+    grid-template-columns: minmax(min-content, 266px) minmax(min-content, 1fr);
+    column-gap: 46px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+}
+
+.gym-contacts__list::after {
+  position: absolute;
+  content: "";
+  width: 102px;
+  height: 1px;
+  transform: rotate(90deg);
+  top: 56px;
+  left: 179px;
+  background-color: #74819c;
+
+  @include vp-1199 {
+    width: 129px;
+    top: 73px;
+    left: 201px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.gym-contacts__item {
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 16px;
+
+    @include vp-1199 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.gym-contacts__address {
+  font-style: normal;
+}

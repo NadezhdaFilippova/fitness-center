@@ -1,0 +1,56 @@
+.user-contacts {
+  width: 50%;
+  background-color: $color-sapphire;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.user-contacts__wrapper {
+  padding-top: 56px;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include vp-1199 {
+    padding: 63px 17% 68px 13%;
+    align-items: flex-start;
+  }
+
+  @include vp-767 {
+    padding: 65px 0 69px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 14px;
+    padding-right: 20px;
+    font-family: $ff-titles;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    letter-spacing: 0.04em;
+
+    @include vp-1199 {
+      margin-bottom: 28px;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.03em;
+    }
+
+    @include vp-767 {
+      margin-bottom: 31px;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.03em;
+    }
+  }
+}
