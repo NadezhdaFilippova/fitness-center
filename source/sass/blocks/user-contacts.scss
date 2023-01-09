@@ -14,13 +14,16 @@
 }
 
 .user-contacts__wrapper {
+  margin-left: auto;
   padding-top: 56px;
-  padding-right: 10%;
+  padding-right: 170px;
+  max-width: 583px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include vp-1199 {
+    max-width: none;
     padding: 63px 17% 68px 13%;
     align-items: flex-start;
   }

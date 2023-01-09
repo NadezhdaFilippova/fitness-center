@@ -1,12 +1,17 @@
 .trainers__container {
-  padding: 0 0 91px 0;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1270px;
+  padding: 0 55px 91px 55px;
 
   @include vp-1199 {
-    padding-bottom: 100px;
+    // max-width: 680px;
+    padding: 0 45px 100px;
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding:0 15px 70px;
   }
 
   h2 {
@@ -34,7 +39,23 @@
 }
 
 .trainers__wrapper {
+  position: relative;
+
+  @include vp-1199 {
+    max-width: 566px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    max-width: 226px;
+    margin: 0 auto;
+  }
+}
+
+.trainers__list {
   display: flex;
+  justify-content: space-between;
+  // flex-wrap: wrap;
 
   @include vp-1199 {
     padding: 0 56px;
@@ -44,3 +65,10 @@
     padding: 0 32px;
   }
 }
+
+
+// .trainers__card {
+//   // margin-right: 40px;
+//   // margin-bottom: 40px;
+// }
+

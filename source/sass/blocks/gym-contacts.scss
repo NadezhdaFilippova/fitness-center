@@ -14,14 +14,16 @@
 .gym-contacts__wrapper {
   padding: 56px 0 63px 124px;
   border-top: 1px solid #74819c;
+  // max-width: 580px;
   // padding-left: 124px;
 
   @include vp-1199 {
     padding: 62px 0 62px 13.2%;
+    max-width: none;
   }
 
   @include vp-767 {
-    padding: 63px 0;
+    padding: 62px 0;
   }
 
   h2 {
@@ -51,6 +53,7 @@
 .gym-contacts__list {
   margin: 0;
   padding: 0;
+  max-width: 580px;
   display: grid;
   grid-template-columns: minmax(min-content, 230px) minmax(min-content, 166px);
   grid-template-rows: repeat(2, min-content);
@@ -61,6 +64,7 @@
   position: relative;
 
   @include vp-1199 {
+    max-width: none;
     grid-template-columns: minmax(min-content, 266px) minmax(min-content, 1fr);
     column-gap: 46px;
   }

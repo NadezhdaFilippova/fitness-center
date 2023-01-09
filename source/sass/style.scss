@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -38,6 +38,8 @@
 @import "blocks/main-footer.scss";
 @import "blocks/footer-nav.scss";
 @import "blocks/social.scss";
+@import "blocks/slider.scss";
+@import "blocks/slider-controls.scss";
 
 // ---------------------------------
 
