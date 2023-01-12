@@ -1532,6 +1532,10 @@ button,
   list-style-type: none;
 }
 
+.main-nav__item--logo {
+  padding-top: 10px;
+}
+
 .main-nav__tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1606,7 +1610,7 @@ button,
 }
 
 .intro__img {
-  margin-top: -7px;
+  margin-top: -12px;
 }
 
 .intro__img img {
@@ -1616,7 +1620,8 @@ button,
 
 .intro__button {
   display: block;
-  padding: 18px 53px;
+  max-width: 230px;
+  padding: 18px 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -1653,7 +1658,7 @@ button,
 
 .gym__about h2 {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 38px;
   margin-bottom: 7px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
@@ -1680,7 +1685,7 @@ button,
   width: 364px;
   height: 228px;
   left: 38%;
-  top: 71%;
+  top: 71.5%;
 }
 
 .movie__back {
@@ -1698,7 +1703,7 @@ button,
   width: 100px;
   height: 100px;
   left: 37%;
-  top: 31%;
+  top: 29%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -1719,7 +1724,7 @@ button,
 
 .membership h2 {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
@@ -1745,10 +1750,10 @@ button,
 
 .membership__backimg {
   position: absolute;
-  width: 470px;
-  height: 421px;
-  bottom: -193px;
-  right: -273px;
+  width: 464px;
+  height: 415px;
+  bottom: -191px;
+  right: -291px;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1811,7 +1816,7 @@ button,
 }
 
 .membership__duration-item:not(:last-child) {
-  margin-right: 46px;
+  margin-right: 52px;
 }
 
 .membership__list {
@@ -1834,7 +1839,7 @@ button,
 }
 
 .membership__item {
-  padding: 3.4rem 4.2rem;
+  padding: 3.2rem 4.2rem 3.75rem;
   text-align: center;
   background-color: #ffffff;
   border: 7px solid #ffffff;
@@ -1843,6 +1848,7 @@ button,
 
 .membership__item h3 {
   margin: 0;
+  margin-bottom: 2px;
   font-weight: 700;
   font-size: 1.63rem;
   line-height: 2.5rem;
@@ -1857,7 +1863,7 @@ button,
 }
 
 .membership__item p {
-  padding-top: 40px;
+  padding-top: 41px;
   margin: 0 0 36px;
   font-weight: 700;
   font-size: 3.75rem;
@@ -1929,7 +1935,7 @@ button,
 }
 
 .promo {
-  padding: 119px 0 106px;
+  padding: 121px 0 106px;
 }
 
 .promo__wrapper {
@@ -2060,11 +2066,10 @@ button,
 }
 
 .trainers__container {
-  margin: 0 auto;
   width: 100%;
-  min-width: 320px;
-  max-width: 1270px;
-  padding: 0 55px 91px 55px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px 91px;
 }
 
 .trainers__container h2 {
@@ -2078,27 +2083,35 @@ button,
 }
 
 .trainers__wrapper {
+  width: 100%;
+  margin: 0 auto;
   position: relative;
+}
+
+.trainers__wrapper--desktop {
+  width: calc(100% + 120px);
+  margin: 0 0 0 -60px;
 }
 
 .trainers__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .card {
+  position: relative;
+  width: 22.41%;
   overflow: hidden;
 }
 
 .card__wrapper {
+  height: 100%;
+  min-height: 242px;
+  margin: 0;
   position: relative;
   color: #ffffff;
   cursor: pointer;
-  width: 260px;
 }
 
 .card__wrapper h3 {
@@ -2162,10 +2175,6 @@ button,
   line-height: 21px;
 }
 
-.card__img-wrapper {
-  width: 260px;
-}
-
 .card__img-wrapper img {
   width: 100%;
   height: 100%;
@@ -2174,7 +2183,7 @@ button,
 }
 
 .advantages {
-  padding: 146px 0 91px;
+  padding: 146px 0 83px;
   background-color: #f8f9fc;
 }
 
@@ -2507,7 +2516,7 @@ button,
 }
 
 .reviews {
-  padding: 0 0 121px;
+  padding: 0 0 122px;
 }
 
 .reviews h2 {
@@ -2524,6 +2533,7 @@ button,
 .reviews__wrapper {
   margin: 0 auto;
   max-width: 560px;
+  position: relative;
 }
 
 .reviews__list {
@@ -2714,7 +2724,7 @@ button,
 
 .user-form__list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2769,7 +2779,7 @@ button,
 
 .user-form__button {
   width: 100%;
-  padding: 14px;
+  padding: 15px 14px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -2778,7 +2788,7 @@ button,
 }
 
 .main-footer {
-  padding: 47px 0 38px;
+  padding: 45px 0 38px;
   background-color: #030a1a;
 }
 
@@ -2873,6 +2883,7 @@ button,
 
 .slider {
   position: relative;
+  overflow: hidden;
 }
 
 .slider__controls {
@@ -2936,6 +2947,17 @@ button,
   height: 32px;
 }
 
+.reviews-controls__button--prev {
+  left: -11.3%;
+}
+
+.reviews-controls__button--next {
+  right: -11.3%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2983,12 +3005,16 @@ button,
   }
 
   .head-container {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 3px;
+    padding-bottom: 82px;
   }
 
   .main-header__nav {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
+  }
+
+  .main-nav__item--logo {
+    padding-top: 6px;
   }
 
   .main-nav__logo img {
@@ -3101,8 +3127,8 @@ button,
   .movie__button {
     width: 27.8%;
     height: 27.8%;
-    left: 38%;
-    top: 33%;
+    left: 35.6%;
+    top: 27%;
   }
 
   .membership {
@@ -3110,7 +3136,8 @@ button,
   }
 
   .membership h2 {
-    margin-bottom: 6px;
+    margin-right: 17px;
+    margin-bottom: 13px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -3140,7 +3167,7 @@ button,
   }
 
   .membership__duration-item:not(:last-child) {
-    margin-right: 54px;
+    margin-right: 59px;
   }
 
   .membership__item {
@@ -3277,27 +3304,18 @@ button,
 
   .trainers__wrapper {
     max-width: 566px;
-    margin: 0 auto;
   }
 
   .trainers__list {
     padding: 0 56px;
   }
 
-  .card {
-    height: 294px;
-  }
-
-  .card__wrapper {
-    width: 268px;
-  }
-
   .card__info span {
     padding-left: 0;
   }
 
-  .card__img-wrapper {
-    width: 268px;
+  .card__img-wrapper img {
+    max-height: 294px;
   }
 
   .advantages {
@@ -3557,6 +3575,14 @@ button,
   .slider-controls__button--next {
     right: -10.6%;
   }
+
+  .reviews-controls__button--prev {
+    left: -10.6%;
+  }
+
+  .reviews-controls__button--next {
+    right: -10.6%;
+  }
 }
 
 @media (max-width: 1199.5px) and (hover: hover) {
@@ -3800,7 +3826,6 @@ button,
 
   .trainers__wrapper {
     max-width: 226px;
-    margin: 0 auto;
   }
 
   .trainers__list {
@@ -3822,6 +3847,10 @@ button,
   .card__img-wrapper {
     width: 226px;
     height: 274px;
+  }
+
+  .card__img-wrapper img {
+    max-height: 274px;
   }
 
   .advantages {
@@ -4105,24 +4134,25 @@ button,
     margin-bottom: 0;
   }
 
-  .slider__controls {
-    top: 47%;
-    -webkit-transform: translateY(-47%);
-    -ms-transform: translateY(-47%);
-    transform: translateY(-47%);
-  }
-
   .slider-controls__button--prev {
-    left: -7px;
+    left: -40px;
   }
 
   .slider-controls__button--next {
-    right: -7px;
+    right: -40px;
   }
 
   .slider-controls__button svg {
     width: 11px;
     height: 20px;
+  }
+
+  .reviews-controls__button--prev {
+    left: -40px;
+  }
+
+  .reviews-controls__button--next {
+    right: -40px;
   }
 }
 

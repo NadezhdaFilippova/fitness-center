@@ -23,7 +23,7 @@
           <div class="main-header__wrapper">
             <nav class="main-header__nav main-nav">
               <ul class="main-nav__list">
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--logo">
                   <a class="main-nav__logo">
                     <img src="img/svg/logo.svg" width="122" height="44" alt="Логотип Sportgym.">
                   </a>
@@ -97,6 +97,7 @@
         </div>
       </div>
     </section>
+
     <section class="membership" id="membership">
       <div class="membership__container container">
         <div class="membership__wrapper">
@@ -231,8 +232,8 @@
     <section class="trainers">
       <div class="trainers__container ">
         <h2>Тренеры</h2>
-        <div class="trainers__wrapper">
-          <div class="trainers__slider slider swiper">
+        <div class="trainers__wrapper trainers__wrapper-desktop">
+          <div class="trainers__slider slider swiper" data-trainers-swiper>
             <div class="trainers__list swiper-wrapper">
 
               <div class="trainers__card card swiper-slide">
@@ -602,7 +603,8 @@
     <section class="reviews">
       <div class="reviews__container container">
         <h2>Отзывы</h2>
-        <div class="reviews__wrapper swiper" data-reviews-swiper>
+        <div class="reviews__wrapper">
+        <div class="reviews__content swiper" data-reviews-swiper>
           <ul class="reviews__list swiper-wrapper">
             <li class="reviews__item swiper-slide">
               <div class="reviews__img">
@@ -661,17 +663,18 @@
           </ul>
         </div>
         <div class="reviews__controls reviews-controls slider__controls">
-          <button class="reviews-controls__button slider-controls__button reviews-controls__button--prev swiper-button-prev" type="button">
+          <button class="reviews-controls__button slider-controls__button reviews-controls__button--prev slider-controls__button--prev swiper-button-prev" type="button">
             <svg width="16" height="32" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#swiper-arrow"></use>
             </svg>
           </button>
-          <button class="reviews-controls__button slider-controls__button reviews-controls__button--next swiper-button-next" type="button">
+          <button class="reviews-controls__button slider-controls__button reviews-controls__button--next slider-controls__button--next swiper-button-next" type="button">
             <svg width="16" height="32" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#swiper-arrow"></use>
             </svg>
           </button>
         </div>
+      </div>
       </div>
     </section>
     <div class="double-contacts contacts">

@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0 0 121px;
+  padding: 0 0 122px;
 
   @include vp-1199 {
     padding: 0 0 100px;
@@ -35,6 +35,7 @@
 .reviews__wrapper {
   margin: 0 auto;
   max-width: 560px;
+  position: relative;
 
   @include vp-1199 {
     max-width: 566px;

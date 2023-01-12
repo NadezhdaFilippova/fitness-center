@@ -1,25 +1,27 @@
 import '../vendor/swiper.js';
 
-console.log('hello world');
-
-const sliders = document.querySelector('.swiper');
+const trainers = document.querySelector('[data-trainers-swiper]');
 const reviews = document.querySelector('[data-reviews-swiper]');
 
-if (sliders) {
+if (trainers) {
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper(trainers, {
     direction: 'horizontal',
     loop: true,
-    // resizeObserver: false,
+    // loopedSlidesLimit: false,
     breakpoints: {
       320: {
         slidesPerView: 1,
         spaceBetween: 30,
+        slidesOffsetAfter: 30,
+        slidesOffsetBefore: -30,
       },
 
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
+        slidesOffsetAfter: 56,
+        slidesOffsetBefore: -56,
       },
 
       1200: {
@@ -37,14 +39,11 @@ if (sliders) {
 
 if (reviews) {
 
-  const reviewsSwiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    // loop: false,
+  const reviewsSwiper = new Swiper(reviews, {
     autoHeight: true,
-    loopAdditionalSlides: 0,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews-controls__button--next',
+      prevEl: '.reviews-controls__button--prev',
     },
   });
 }

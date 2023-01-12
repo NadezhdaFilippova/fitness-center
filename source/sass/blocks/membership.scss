@@ -14,7 +14,7 @@
 
   h2 {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: $ff-titles;
     font-weight: 600;
     font-size: 54px;
@@ -23,7 +23,8 @@
     text-align: center;
 
     @include vp-1199 {
-      margin-bottom: 6px;
+      margin-right: 17px;
+      margin-bottom: 13px;
       font-size: 42px;
       line-height: 50px;
     }
@@ -60,10 +61,10 @@
 
 .membership__backimg {
   position: absolute;
-  width: 470px;
-  height: 421px;
-  bottom: -193px;
-  right: -273px;
+  width: 464px;
+  height: 415px;
+  bottom: -191px;
+  right: -291px;
   z-index: -1;
   // background-image: url("../img/weight-plates.png");
   background-size: cover;
@@ -172,10 +173,10 @@
 }
 
 .membership__duration-item:not(:last-child) {
-  margin-right: 46px;
+  margin-right: 52px;
 
   @include vp-1199 {
-    margin-right: 54px;
+    margin-right: 59px;
   }
 
   @include vp-767 {
@@ -211,7 +212,7 @@
 }
 
 .membership__item {
-  padding: 3.4rem 4.2rem;
+  padding: 3.2rem 4.2rem 3.75rem;
   text-align: center;
   background-color: $color-default-white;
   border: 7px solid $color-default-white;
@@ -250,6 +251,7 @@
 
   h3 {
     margin: 0;
+    margin-bottom: 2px;
     font-weight: 700;
     font-size: 1.63rem;
     line-height: 2.5rem;
@@ -278,7 +280,7 @@
   }
 
   p {
-    padding-top: 40px;
+    padding-top: 41px;
     margin: 0 0 36px;
     font-weight: 700;
     font-size: 3.75rem;

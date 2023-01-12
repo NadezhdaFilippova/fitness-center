@@ -3,7 +3,7 @@
   width: 364px;
   height: 228px;
   left: 38%;
-  top: 71%;
+  top: 71.5%;
 
   @include vp-1199 {
     width: 39%;
@@ -62,15 +62,15 @@
   width: 100px;
   height: 100px;
   left: 37%;
-  top: 31%;
+  top: 29%;
   border: none;
   background-color: $color-transparent;
 
   @include vp-1199 {
     width: 27.8%;
     height: 27.8%;
-    left: 38%;
-    top: 33%;
+    left: 35.6%;
+    top: 27%;
   }
 
   @include vp-767 {

@@ -5,15 +5,16 @@ const playButton = movie.querySelector('.movie__button');
 const id = '9TZXsZItgdw';
 
 const generateUrl = (elem)=> {
-  const query = '?autoplay=1';
+  const query = '?autoplay=1&loop=1&&playlist=9TZXsZItgdw';
   return 'https://www.youtube.com/embed/' + elem + query;
 };
 
 const createIframe = (elem) => {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('frameborder', '0');
   iframe.setAttribute('src', generateUrl(elem));
-  // iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
   iframe.classList.add('movie__back');
 
   return iframe;

@@ -1,23 +1,28 @@
 .card {
-  // width: 22.41%;
+  position: relative;
+  width: 22.41%;
   overflow: hidden;
+  // flex-shrink: 0;
+  // max-width: 100%;
+  // width: 22.41%;
+  // overflow: hidden;
 
   @include vp-1199 {
-    //временно, для PF карточки
-    // width: 268px;
-    height: 294px;
   }
 }
 
 .card__wrapper {
+  height: 100%;
+  min-height: 242px;
+  margin: 0;
   position: relative;
   color: $color-default-white;
   cursor: pointer;
-  width: 260px;
+  // width: 260px;
 
   @include vp-1199 {
     //временно, для PF карточки
-    width: 268px;
+    // width: 268px;
     // height: 294px;
   }
 
@@ -116,11 +121,11 @@
 
 
 .card__img-wrapper {
-  width: 260px;
+  // width: 260px;
 
   @include vp-1199 {
     //временно, для PF карточки
-    width: 268px;
+    // width: 268px;
     // height: 294px;
   }
 
@@ -135,16 +140,14 @@
     object-fit: cover;
     // aspect-ratio: 1/1.5;
 
-    // @include vp-1199 {
-    //   //временно, для PF карточки
-    //   width: 268px;
-    //   height: 294px;
-    // }
+    @include vp-1199 {
+      // width: 268px;
+      max-height: 294px;
+    }
 
-    // @include vp-767 {
-    //   //временно, для PF карточки
-    //   width: 226px;
-    //   height: 274px;
-    // }
+    @include vp-767 {
+      // width: 226px;
+      max-height: 274px;
+    }
   }
 }
