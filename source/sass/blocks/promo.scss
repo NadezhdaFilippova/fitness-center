@@ -1,5 +1,13 @@
 .promo {
   padding: 121px 0 106px;
+
+  @include vp-1199 {
+    padding: 99px 0 101px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0 66px;
+  }
 }
 
 .promo__wrapper {
@@ -139,35 +147,13 @@
   }
 }
 
-// dd::before {
-//   position: absolute;
-//   width: 100%;
-//   height: 1px;
-//   background-color: $color-default-white;
-//   top: 0;
-//   left: 0;
-//   content: "";
-// }
-
 .promo__date-number {
   padding-right: 40px;
 
   @include vp-1199 {
     padding-right: 29px;
   }
-
-  // border-top: 1px solid #ffffff;
 }
-
-// .promo__date-number::before {
-//   position: absolute;
-//   width: 100%;
-//   height: 1px;
-//   background-color: $color-default-white;
-//   top: 0;
-//   left: 0;
-//   content: "";
-// }
 
 .promo__month {
   position: absolute;
@@ -228,6 +214,10 @@
 
   @include vp-767 {
     padding: 11.5px 22px;
+  }
+
+  @include focus {
+    box-shadow: 0 0 6px 4px $color-default-white;
   }
 }
 

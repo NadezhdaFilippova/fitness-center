@@ -21,6 +21,15 @@
   background: none;
   border: none;
   cursor: pointer;
+
+  @include hover {
+    background-color: $color-ghost-white;
+  }
+
+  @include focus {
+    background-color: $color-ghost-white;
+    outline: 2px solid #afafaf;
+  }
 }
 
 .slider-controls__button--prev {

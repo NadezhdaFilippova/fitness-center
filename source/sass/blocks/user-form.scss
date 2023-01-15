@@ -1,6 +1,5 @@
 .user-form {
   width: 100%;
-  // max-width: 583px;
 
   @include vp-1199 {
     max-width: none;
@@ -29,6 +28,14 @@
   border: none;
   border-bottom: 1px solid #74819c;
 
+  @include hover {
+    box-shadow: 0 2px 4px rgb(70 130 180 / 80%);
+  }
+
+  @include focus {
+    outline: 3px solid $color-default-white;
+  }
+
   @include vp-1199 {
     min-width: 205px;
     width: 100%;
@@ -44,7 +51,7 @@
 
 .user-form__item {
   @include vp-1199 {
-    width: 50%;
+    width: 43%;
   }
 
   @include vp-767 {
@@ -73,4 +80,20 @@
   text-transform: uppercase;
   background-color: $color-transparent;
   border: 3px solid $color-default-white;
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        box-shadow: inset 0 0 2px 4px $color-default-white;
+      }
+    }
+
+    &.focus-visible:focus {
+      box-shadow: inset 0 0 2px 4px $color-default-white;
+    }
+  }
+}
+
+.user-form__button:active {
+  opacity: 0.7;
 }

@@ -18,6 +18,22 @@
   background-color: $color-default-white;
   border-radius: 50%;
 
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-neon-blue;
+      }
+    }
+
+    &.focus-visible:focus {
+      outline: 2px solid $color-neon-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   svg {
     position: absolute;
     top: 0;

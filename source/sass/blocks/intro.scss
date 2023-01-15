@@ -12,17 +12,17 @@
 
 .intro__description {
   margin-right: 64px;
-  padding-top: 121px;
-  padding-left: 135px;
+  padding-top: 104px;
+  padding-left: 96px;
   font-family: $ff-titles;
   font-weight: 600;
   text-align: right;
   position: relative;
 
   @include vp-1199 {
-    width: 52%;
+    width: 48%;
     margin-right: 30px;
-    padding-top: 57px;
+    padding-top: 52px;
     padding-left: 0;
   }
 
@@ -30,28 +30,31 @@
     width: 100%;
     max-width: 570px;
     margin-right: 0;
-    padding-top: 80px;
+    padding-top: 51px;
   }
 
   span {
+    display: inline-block;
     margin: 0;
-    margin-bottom: 25px;
-    padding-right: 30px;
+    margin-bottom: 15px;
+    padding-right: 52px;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
-    letter-spacing: 0.03em;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     @include vp-1199 {
-      margin-bottom: 15px;
-      font-size: 34px;
-      line-height: 41px;
+      margin-bottom: 7px;
+      padding-right: 7px;
+      font-size: 29px;
+      line-height: 39px;
     }
 
     @include vp-767 {
-      margin-bottom: 20px;
-      font-size: 28px;
+      margin-bottom: 13px;
+      padding-right: 5px;
+      font-size: 24px;
       line-height: 34px;
     }
   }
@@ -59,17 +62,24 @@
   h1 {
     max-width: 300px;
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 49px;
+    font-weight: 800;
     font-size: 92px;
     line-height: 110px;
-    text-transform: lowercase;
-    // letter-spacing: 0.05em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 
     @include vp-1199 {
-      margin-bottom: 60px;
+      margin-bottom: 38px;
       margin-left: auto;
-      font-size: 72px;
+      font-size: 75px;
       line-height: 86px;
+      text-transform: lowercase;
+      letter-spacing: 0.03em;
+    }
+
+    @include vp-767 {
+      margin-bottom: 24px;
     }
   }
 }
@@ -79,8 +89,8 @@
   padding: 0;
   position: absolute;
   width: 115px;
-  top: 312px;
-  right: 193px;
+  top: 292px;
+  right: 262px;
   list-style-type: none;
   font-family: $ff-main;
   font-weight: 400;
@@ -90,8 +100,13 @@
   text-align: right;
 
   @include vp-1199 {
+    top: 48%;
+    right: 212px;
+  }
+
+  @include vp-767 {
     top: 50%;
-    right: 186px;
+    right: 178px;
   }
 }
 
@@ -109,17 +124,16 @@
   }
 
   img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
-    @include vp-1199 {
-      aspect-ratio: 1/1.2;
-    }
   }
 }
 
 .intro__button {
   display: block;
   max-width: 230px;
+  margin-left: auto;
   padding: 18px 20px;
   font-family: $ff-main;
   font-weight: 700;
@@ -132,8 +146,25 @@
   border: 4px solid $color-default-white;
 
 
+  @include hover {
+    color: $color-sapphire;
+    border: 4px solid $color-sapphire;
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      border: 4px solid $color-sapphire;
+    }
+  }
+
   @include vp-1199 {
-    padding: 18px 30px;
+    padding: 18px 10px;
+    max-width: 183px;
+
+    @include hover-focus {
+      color: $color-default-white;
+      border: 4px solid $color-default-white;
+    }
   }
 
   @include vp-767 {
@@ -141,4 +172,8 @@
     width: 100%;
     max-width: 300px;
   }
+}
+
+.intro__button:active {
+  opacity: 0.3;
 }

@@ -14,8 +14,6 @@
 .gym-contacts__wrapper {
   padding: 56px 0 63px 124px;
   border-top: 1px solid #74819c;
-  // max-width: 580px;
-  // padding-left: 124px;
 
   @include vp-1199 {
     padding: 62px 0 62px 13.2%;
@@ -119,6 +117,24 @@
 
   p {
     margin: 0;
+  }
+
+  a {
+    @include hover-focus {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          opacity: 0.8;
+        }
+      }
+
+      &.focus-visible:focus {
+        outline: 2px solid $color-resolution-blue;
+      }
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
   }
 }
 
