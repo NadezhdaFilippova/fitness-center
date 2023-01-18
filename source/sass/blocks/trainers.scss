@@ -57,6 +57,7 @@
 
 .trainers__list {
   display: flex;
+  // flex-wrap: wrap;
 
   @include vp-1199 {
     padding: 0 56px;

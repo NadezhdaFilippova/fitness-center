@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {replaceMovie} from './modules/movie';
 import {onOpenTabs} from './modules/tabs';
 import './modules/slider';
-import { onTelInput } from './modules/tel-validate';
+import {onTelInput} from './modules/tel-validate';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
