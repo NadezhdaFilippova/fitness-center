@@ -14,6 +14,7 @@
   <link rel="preload" href="./fonts/robotocondensedregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/rouble.woff2" as="font" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="wrapper">
     <div class="head-container">
@@ -230,245 +231,154 @@
         </div>
       </section>
       <section class="trainers">
-        <div class="trainers__container ">
+        <div class="trainers__title-wrapper">
           <h2>Тренеры</h2>
-          <div class="trainers__wrapper trainers__wrapper-desktop">
-            <div class="slider__controls slider-controls">
-              <button class="slider-controls__button slider-controls__button--prev swiper-button-prev" type="button">
-                <svg width="16" height="32" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-                </svg>
-              </button>
-              <button class="slider-controls__button slider-controls__button--next swiper-button-next" type="button">
-                <svg width="16" height="32" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-                </svg>
-              </button>
+        </div>
+        <div class="trainers__wrapper">
+          <div class="trainers__slider slider swiper no-js" data-trainers-swiper>
+            <div class="trainers__list slider__list swiper-wrapper">
+              <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Анна Павлова</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Анны Павловой.">
+              </picture>
+              <div class="card__info">
+                <h4>Анна Павлова</h4>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
-            <div class="trainers__slider slider swiper no-js" data-trainers-swiper>
-              <div class="trainers__list slider__list swiper-wrapper">
-
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Анна Павлова</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
-                        <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Анна Павлова</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Алексей Лавров</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
-                        <img src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Алексей Лавров</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Александр Пашков</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
-                        <img src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Александр Пашков</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Мария Кетова</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
-                        <img src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Мария Кетова</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Анна Павлова</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
-                        <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Анна Павлова</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Алексей Лавров</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
-                        <img src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Алексей Лавров</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Александр Пашков</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
-                        <img src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Александр Пашков</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="trainers__card card swiper-slide">
-                  <div class="card__wrapper" tabindex="0">
-                    <h3>Мария Кетова</h3>
-                    <div class="card__img-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
-                        <img src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294"
-                          alt="Фото трененра Александра Пашкова.">
-                      </picture>
-                    </div>
-                    <div class="card__info no-scrollbar">
-                      <h4>Мария Кетова</h4>
-                      <span>CrossFit</span>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p>Certified Level 3 Trainer</p>
-                        </li>
-                        <li class="card__item">
-                          <p>Победитель чемпионата России по CrossFit </p>
-                        </li>
-                        <li class="card__item">
-                          <p>Опыт — 6 лет</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Алексей Лавров</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
+                <img src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Александра Пашкова.">
+              </picture>
+              <div class="card__info">
+                <h4>Алексей Лавров</h4>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Александр Пашков</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
+                <img src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Александра Пашкова.">
+              </picture>
+              <div class="card__info">
+                <h4>Александр Пашков</h4>
+                <span>CrossFit</span>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Мария Кетова</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
+                <img src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Александра Пашкова.">
+              </picture>
+              <div class="card__info">
+                <h4>Мария Кетова</h4>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Анна Павлова</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Анны Павловой.">
+              </picture>
+              <div class="card__info">
+                <h4>Анна Павлова</h4>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Алексей Лавров</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
+                <img src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Александра Пашкова.">
+              </picture>
+              <div class="card__info">
+                <h4>Алексей Лавров</h4>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Александр Пашков</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
+                <img src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Александра Пашкова.">
+              </picture>
+              <div class="card__info">
+                <h4>Александр Пашков</h4>
+                <span>CrossFit</span>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trainers__card card swiper-slide" tabindex="0">
+              <h3>Мария Кетова</h3>
+              <picture>
+                <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
+                <img src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294"
+                  alt="Фото трененра Александра Пашкова.">
+              </picture>
+              <div class="card__info">
+                <h4>Мария Кетова</h4>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__item">Certified Level 3 Trainer</li>
+                  <li class="card__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="card__item">Опыт — 6 лет</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+        <div class="trainers__button-slider trainers__button-slider--prev trainers__button-prev swiper-button-prev"></div>
+        <div class="trainers__button-slider trainers__button-slider--next trainers__button-next swiper-button-next"></div>
+         </div>
+
       </section>
       <section class="advantages">
         <div class="container advantages__container">

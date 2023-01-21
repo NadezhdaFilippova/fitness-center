@@ -2122,14 +2122,16 @@ button,
   opacity: 0.8;
 }
 
-.trainers__container {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 0 103px 91px;
+.trainers {
+  padding-bottom: 92px;
 }
 
-.trainers__container h2 {
+.trainers__title-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.trainers__title-wrapper h2 {
   margin: 0;
   margin-bottom: 48px;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -2140,14 +2142,9 @@ button,
 }
 
 .trainers__wrapper {
-  width: 100%;
+  width: 1160px;
   margin: 0 auto;
   position: relative;
-}
-
-.trainers__wrapper--desktop {
-  width: calc(100% + 120px);
-  margin: 0 0 0 -60px;
 }
 
 .trainers__list {
@@ -2156,56 +2153,73 @@ button,
   display: flex;
 }
 
+.trainers__button-slider.focus-visible:focus {
+  background-color: #f8f9fc;
+  outline: 2px solid #afafaf;
+}
+
+.trainers__button-slider::after {
+  content: "";
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/svg/arrow-swiper.svg");
+  background-size: cover;
+}
+
+.trainers__button-slider--prev {
+  left: -62px;
+}
+
+.trainers__button-slider--prev::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.trainers__button-slider--next {
+  right: -62px;
+}
+
 .card {
   position: relative;
-  width: 22.41%;
-  overflow: hidden;
+  text-align: center;
 }
 
-.card__wrapper {
-  height: 100%;
-  min-height: 242px;
-  margin: 0;
-  position: relative;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.card__wrapper h3 {
+.card h3 {
   position: absolute;
-  bottom: 8.2%;
-  left: 30%;
-  margin: 0 auto;
-  font-weight: 700;
+  bottom: 12px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
   font-size: 18px;
   line-height: 27px;
+  z-index: 1;
 }
 
-.card__wrapper:focus-within h3 {
+.card:focus h3,
+.card:hover h3 {
   display: none;
 }
 
-.card__wrapper:focus-within .card__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.card:focus .card__info,
+.card:hover .card__info {
+  display: block;
 }
 
 .card__info {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 51px 46px 33px 40px;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: rgba(16, 38, 84, 0.89);
-  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+  text-align: center;
+  padding: 52px 20px 10px;
+  overflow-y: auto;
 }
 
 .card__info h4 {
@@ -2216,8 +2230,8 @@ button,
 }
 
 .card__info span {
-  margin-bottom: 13px;
-  padding-left: 6px;
+  display: inline-block;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
@@ -2227,16 +2241,19 @@ button,
 .card__list {
   margin: 0;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 50px;
   font-size: 14px;
   line-height: 21px;
+  text-align: left;
 }
 
-.card__img-wrapper img {
+.card__item {
+  margin-bottom: 13px;
+}
+
+.card img {
+  vertical-align: top;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .advantages {
@@ -2988,70 +3005,10 @@ button,
   overflow: hidden;
 }
 
-.slider__controls {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 50px;
-}
-
-.slider-controls__button {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  top: 0;
-  width: 25px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.slider-controls__button.focus-visible:focus {
-  background-color: #f8f9fc;
-  outline: 2px solid #afafaf;
-}
-
-.slider-controls__button--prev {
-  left: -5.3%;
-}
-
-.slider-controls__button--next {
-  right: -5.3%;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.slider-controls__button svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: none;
-  stroke: #afafaf;
-  width: 16px;
-  height: 32px;
+.slider.no-js .slider__list {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .reviews-controls__button--prev {
@@ -3105,6 +3062,12 @@ button,
     }
   }
 */
+
+@media (max-width: 1279px) {
+  .trainers__wrapper {
+    width: 1070px;
+  }
+}
 
 @media (max-width: 1199.5px) {
   .container {
@@ -3414,11 +3377,15 @@ button,
     object-fit: cover;
   }
 
-  .trainers__container {
-    padding: 0 45px 100px;
+  .trainers {
+    padding-bottom: 100px;
   }
 
-  .trainers__container h2 {
+  .trainers__title-wrapper {
+    width: 88.28%;
+  }
+
+  .trainers__title-wrapper h2 {
     margin-bottom: 31px;
     font-size: 42px;
     line-height: 50px;
@@ -3426,24 +3393,51 @@ button,
   }
 
   .trainers__wrapper {
-    max-width: 566px;
+    width: 88.28%;
+    padding: 0 56px;
   }
 
   .trainers__list {
     padding: 0 56px;
   }
 
-  .card__wrapper h3 {
-    bottom: 7.2%;
-    left: 32%;
+  .trainers__button-slider--prev {
+    left: -7px;
+  }
+
+  .trainers__button-slider--next {
+    right: -7px;
+  }
+
+  .card {
+    padding-top: 51.95%;
+  }
+
+  .card h3 {
+    left: 3px;
+  }
+
+  .card__info {
+    padding: 53px 17px 10px 9px;
+  }
+
+  .card__info h4 {
+    line-height: 23px;
   }
 
   .card__info span {
-    padding-left: 0;
+    margin-bottom: 32px;
   }
 
-  .card__img-wrapper img {
-    max-height: 294px;
+  .card__list {
+    padding-left: 61px;
+  }
+
+  .card img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .advantages {
@@ -3705,12 +3699,8 @@ button,
     margin-right: 30px;
   }
 
-  .slider-controls__button--prev {
-    left: -10.6%;
-  }
-
-  .slider-controls__button--next {
-    right: -10.6%;
+  .slider.no-js .slider__list {
+    gap: 30px;
   }
 
   .reviews-controls__button--prev {
@@ -3986,44 +3976,52 @@ button,
     width: 100%;
   }
 
-  .trainers__container {
-    padding: 0 15px 70px;
+  .trainers {
+    padding-bottom: 71px;
   }
 
-  .trainers__container h2 {
+  .trainers__title-wrapper {
+    width: 90.62%;
+  }
+
+  .trainers__title-wrapper h2 {
     margin-bottom: 42px;
     font-size: 32px;
     line-height: 38px;
   }
 
   .trainers__wrapper {
-    max-width: 226px;
+    width: 90.62%;
+    padding: 0 32px;
   }
 
   .trainers__list {
     padding: 0 32px;
   }
 
-  .card__wrapper {
-    width: 226px;
+  .trainers__button-slider::after {
+    width: 10px;
+    height: 19px;
+  }
+
+  .trainers__button-slider--prev {
+    left: -9px;
+  }
+
+  .trainers__button-slider--next {
+    right: -9px;
+  }
+
+  .card {
+    padding-top: 121.23%;
   }
 
   .card__info {
     padding: 43px 17px 30px;
   }
 
-  .card__info span {
-    margin-top: -4px;
-    margin-bottom: 17px;
-  }
-
-  .card__img-wrapper {
-    width: 226px;
-    height: 274px;
-  }
-
-  .card__img-wrapper img {
-    max-height: 274px;
+  .card__list {
+    padding-left: 30px;
   }
 
   .advantages {
@@ -4319,19 +4317,6 @@ button,
     margin-bottom: 0;
   }
 
-  .slider-controls__button--prev {
-    left: -40px;
-  }
-
-  .slider-controls__button--next {
-    right: -40px;
-  }
-
-  .slider-controls__button svg {
-    width: 11px;
-    height: 20px;
-  }
-
   .reviews-controls__button--prev {
     left: -40px;
   }
@@ -4395,14 +4380,8 @@ button,
     color: #ed0233;
   }
 
-  .card__wrapper:hover:not(.focus-visible) h3 {
-    display: none;
-  }
-
-  .card__wrapper:hover:not(.focus-visible) .card__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .trainers__button-slider:hover:not(.focus-visible) {
+    background-color: #f8f9fc;
   }
 
   .discounts__link:hover:not(.focus-visible) {
@@ -4446,10 +4425,6 @@ button,
 
   .social__link.focus-visible:focus:hover:not(.focus-visible) {
     background-color: #2c39f2;
-  }
-
-  .slider-controls__button:hover:not(.focus-visible) {
-    background-color: #f8f9fc;
   }
 }
 

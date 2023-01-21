@@ -1,71 +1,60 @@
 .card {
   position: relative;
-  width: 22.41%;
-  overflow: hidden;
+  text-align: center;
 
-  // margin-right: 40px;
-}
-
-.card__wrapper {
-  height: 100%;
-  min-height: 242px;
-  margin: 0;
-  position: relative;
-  color: $color-default-white;
-  cursor: pointer;
+  @include vp-1199 {
+    padding-top: 51.95%;
+  }
 
   @include vp-767 {
-    width: 226px;
-  }
-
-  @include hover {
-    h3 {
-      display: none;
-    }
-
-    .card__info {
-      display: flex;
-    }
-  }
-
-  h3 {
-    position: absolute;
-    bottom: 8.2%;
-    left: 30%;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-
-    @include vp-1199 {
-      bottom: 7.2%;
-      left: 32%;
-    }
+    padding-top: 121.23%;
   }
 }
 
-.card__wrapper:focus-within {
+.card h3 {
+  position: absolute;
+  bottom: 12px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 27px;
+  z-index: 1;
+
+  @include vp-1199 {
+    left: 3px;
+  }
+}
+
+.card:focus,
+.card:hover {
   h3 {
     display: none;
   }
 
   .card__info {
-    display: flex;
+    display: block;
   }
 }
 
 .card__info {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 51px 46px 33px 40px;
   display: none;
-  flex-direction: column;
-  background: rgba(16, 38, 84, 0.89);
-  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: $color-default-white;
+  text-align: center;
+  padding: 52px 20px 10px;
+  overflow-y: auto;
+
+  @include vp-1199 {
+    padding: 53px 17px 10px 9px;
+  }
 
   @include vp-767 {
     padding: 43px 17px 30px;
@@ -76,23 +65,22 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
+
+    @include vp-1199 {
+      line-height: 23px;
+    }
   }
 
   span {
-    margin-bottom: 13px;
-    padding-left: 6px;
+    display: inline-block;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
     color: #b6bdcc;
     text-align: center;
 
     @include vp-1199 {
-      padding-left: 0;
-    }
-
-    @include vp-767 {
-      margin-top: -4px;
-      margin-bottom: 17px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -100,29 +88,32 @@
 .card__list {
   margin: 0;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 50px;
   font-size: 14px;
   line-height: 21px;
-}
+  text-align: left;
 
-
-.card__img-wrapper {
-  @include vp-767 {
-    width: 226px;
-    height: 274px;
+  @include vp-1199 {
+    padding-left: 61px;
   }
 
-  img {
-    width: 100%;
+  @include vp-767 {
+    padding-left: 30px;
+  }
+}
+
+.card__item {
+  margin-bottom: 13px;
+}
+
+.card img {
+  vertical-align: top;
+  width: 100%;
+
+  @include vp-1199 {
     height: 100%;
-    object-fit: cover;
-
-    @include vp-1199 {
-      max-height: 294px;
-    }
-
-    @include vp-767 {
-      max-height: 274px;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }

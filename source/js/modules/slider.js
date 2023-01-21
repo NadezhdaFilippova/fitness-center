@@ -1,22 +1,20 @@
 import '../vendor/swiper.js';
-import {debounce} from '../utils/debounce';
+// import {debounce} from '../utils/debounce';
 
 const trainers = document.querySelector('[data-trainers-swiper]');
 const reviews = document.querySelector('[data-reviews-swiper]');
 
 const initTrainersSwiper = ()=> {
   trainers.classList.remove('no-js');
-
   const trainersSwiper = new Swiper(trainers, {
     direction: 'horizontal',
     loop: true,
-    observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
     breakpoints: {
       1200: {
         slidesPerView: 4,
         spaceBetween: 40,
+        slidesOffsetAfter: 40,
+        slidesOffsetBefore: 0,
       },
 
       768: {
@@ -34,20 +32,16 @@ const initTrainersSwiper = ()=> {
       },
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainers__button-slider--next',
+      prevEl: '.trainers__buttonslider--prev',
     },
   });
+  const slideDuplicates = document.querySelectorAll('.swiper-slide-duplicate');
+
+  slideDuplicates.forEach((item) => {
+    item.removeAttribute('tabindex');
+  });
 };
-
-const debouncedSwiper = debounce(initTrainersSwiper, 100);
-
-window.addEventListener('resize', ()=> {
-  // if (window.innerWidth >= 1200) {
-
-    debouncedSwiper();
-  // }
-});
 
 initTrainersSwiper();
 

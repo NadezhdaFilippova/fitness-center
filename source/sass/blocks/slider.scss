@@ -3,13 +3,13 @@
   overflow: hidden;
 }
 
-// .slider.no-js {
-//   .slider__list {
-//     flex-wrap: wrap;
-//     gap: 40px;
+.slider.no-js {
+  .slider__list {
+    flex-wrap: wrap;
+    gap: 40px;
 
-//     @include vp-1199 {
-//       gap: 30px;
-//     }
-//   }
-// }
+    @include vp-1199 {
+      gap: 30px;
+    }
+  }
+}
