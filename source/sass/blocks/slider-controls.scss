@@ -1,0 +1,76 @@
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+
+.slider-controls__button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 25px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  @include hover {
+    background-color: $color-ghost-white;
+  }
+
+  @include focus {
+    background-color: $color-ghost-white;
+    outline: 2px solid #afafaf;
+  }
+}
+
+.slider-controls__button--prev {
+  left: -5.3%;
+
+  @include vp-1199 {
+    left: -10.6%;
+  }
+
+  @include vp-767 {
+    left: -40px;
+  }
+}
+
+.slider-controls__button--next {
+  right: -5.3%;
+  transform: rotate(180deg);
+
+  @include vp-1199 {
+    right: -10.6%;
+  }
+
+  @include vp-767 {
+    right: -40px;
+  }
+}
+
+.slider-controls__button svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: none;
+  stroke: $color-dark-grey;
+  width: 16px;
+  height: 32px;
+
+  @include vp-767 {
+    width: 11px;
+    height: 20px;
+  }
+}

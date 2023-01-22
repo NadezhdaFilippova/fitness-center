@@ -3011,6 +3011,72 @@ button,
   gap: 40px;
 }
 
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+
+.slider-controls__button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  width: 25px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-controls__button.focus-visible:focus {
+  background-color: #f8f9fc;
+  outline: 2px solid #afafaf;
+}
+
+.slider-controls__button--prev {
+  left: -5.3%;
+}
+
+.slider-controls__button--next {
+  right: -5.3%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.slider-controls__button svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: none;
+  stroke: #afafaf;
+  width: 16px;
+  height: 32px;
+}
+
 .reviews-controls__button--prev {
   left: -11.3%;
 }
@@ -3703,6 +3769,14 @@ button,
     gap: 30px;
   }
 
+  .slider-controls__button--prev {
+    left: -10.6%;
+  }
+
+  .slider-controls__button--next {
+    right: -10.6%;
+  }
+
   .reviews-controls__button--prev {
     left: -10.6%;
   }
@@ -4317,6 +4391,19 @@ button,
     margin-bottom: 0;
   }
 
+  .slider-controls__button--prev {
+    left: -40px;
+  }
+
+  .slider-controls__button--next {
+    right: -40px;
+  }
+
+  .slider-controls__button svg {
+    width: 11px;
+    height: 20px;
+  }
+
   .reviews-controls__button--prev {
     left: -40px;
   }
@@ -4425,6 +4512,10 @@ button,
 
   .social__link.focus-visible:focus:hover:not(.focus-visible) {
     background-color: #2c39f2;
+  }
+
+  .slider-controls__button:hover:not(.focus-visible) {
+    background-color: #f8f9fc;
   }
 }
 

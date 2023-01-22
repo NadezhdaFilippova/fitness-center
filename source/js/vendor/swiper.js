@@ -10173,5 +10173,4 @@ const swiper = () => {
   });
   //# sourceMappingURL=swiper-bundle.js.map
 };
-
 export default swiper();
