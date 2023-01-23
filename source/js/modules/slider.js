@@ -1,3 +1,5 @@
+import Swiper from 'vendor';
+
 const trainers = document.querySelector('[data-trainers-swiper]');
 const reviews = document.querySelector('[data-reviews-swiper]');
 
