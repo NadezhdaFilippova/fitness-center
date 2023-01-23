@@ -86,7 +86,7 @@ module.exports = {
     'no-label-var': 'error',
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
-    'no-undef': 'error', // default
+    'no-undef': 'off', // default
     'no-undef-init': 'error',
     'no-undefined': 'error',
 

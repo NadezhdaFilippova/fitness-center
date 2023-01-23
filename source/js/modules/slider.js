@@ -1,7 +1,7 @@
-import Swiper from 'vendor';
-
 const trainers = document.querySelector('[data-trainers-swiper]');
 const reviews = document.querySelector('[data-reviews-swiper]');
+
+trainers.classList.remove('no-js');
 
 trainers.classList.remove('no-js');
 const trainersSwiperParams = {
@@ -13,6 +13,7 @@ const trainersSwiperParams = {
       spaceBetween: 40,
       slidesOffsetAfter: 40,
       slidesOffsetBefore: 0,
+      initialSlide: 0,
     },
 
     768: {
@@ -20,6 +21,7 @@ const trainersSwiperParams = {
       spaceBetween: 30,
       slidesOffsetAfter: 56,
       slidesOffsetBefore: -56,
+      initialSlide: 2,
     },
 
     320: {
@@ -27,6 +29,7 @@ const trainersSwiperParams = {
       spaceBetween: 30,
       slidesOffsetAfter: 30,
       slidesOffsetBefore: -30,
+      initialSlide: 2,
     },
   },
   navigation: {
@@ -37,13 +40,13 @@ const trainersSwiperParams = {
 
 const initTrainersSwiper = () => new Swiper(trainers, trainersSwiperParams);
 
+initTrainersSwiper();
+
 const slideDuplicates = document.querySelectorAll('.swiper-slide-duplicate');
 
 slideDuplicates.forEach((item) => {
   item.removeAttribute('tabindex');
 });
-
-initTrainersSwiper();
 
 
 const initReviewsSwiper = () => new Swiper(reviews, {
