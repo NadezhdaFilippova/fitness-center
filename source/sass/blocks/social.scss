@@ -1,9 +1,25 @@
+.social {
+  width: 10%;
+
+  @include vp-1199 {
+    width: 15%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
 .social__list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+}
+
+.social__item {
+  margin-bottom: 10px;
 }
 
 .social__item:not(:last-child) {

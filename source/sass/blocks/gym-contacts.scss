@@ -118,6 +118,15 @@
   p {
     margin: 0;
   }
+}
+
+.gym-contacts__address {
+  font-style: normal;
+}
+
+.gym-contacts__tel {
+  display: flex;
+  flex-direction: column;
 
   a {
     @include hover-focus {
@@ -136,8 +145,5 @@
       opacity: 0.2;
     }
   }
-}
 
-.gym-contacts__address {
-  font-style: normal;
 }

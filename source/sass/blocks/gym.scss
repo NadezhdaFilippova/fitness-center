@@ -104,6 +104,10 @@
 }
 
 .gym__img {
+  @include vp-1199 {
+    align-self: auto;
+  }
+
   @include vp-767 {
     margin-bottom: 40px;
   }
@@ -116,7 +120,7 @@
     }
 
     @include vp-767 {
-      aspect-ratio: 3/2.94;
+      aspect-ratio: 3/2.93;
     }
   }
 }

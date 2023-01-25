@@ -91,7 +91,7 @@
               </picture>
 
             </a>
-            <button class="movie__button" aria-label="Запустить видео.">
+            <button class="movie__button" type="button" aria-label="Запустить видео.">
               <img src="img/svg/playbtn.svg" width="100" height="100" alt="Изображение кнопки Play.">
             </button>
 
@@ -106,11 +106,11 @@
             <div class="membership__tabs">
               <ul class="membership__duration-list">
                 <li class="membership__duration-item">
-                  <button class="membership__duration-button is-active" type="button"
-                    data-duration="month">1месяц</button>
+                  <button class="membership__duration-button is-active" type="button" data-duration="month">1
+                    месяц</button>
                 </li>
                 <li class="membership__duration-item">
-                  <button class="membership__duration-button" type="button" data-duration="halfyear">6месяцев</button>
+                  <button class="membership__duration-button" type="button" data-duration="halfyear">6 месяцев</button>
                 </li>
                 <li class="membership__duration-item">
                   <button class="membership__duration-button" type="button" data-duration="year">12
@@ -470,9 +470,11 @@
             <ul class="discounts__list">
               <li class="discounts__item discounts__item--primary">
                 <div class="discounts__summary">
-                  <h3>Год</h3>
-                  <b>4999</b>
-                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <div class="discounts__description">
+                    <h3>Год</h3>
+                    <b>4999</b>
+                    <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  </div>
                   <a class="discounts__link discounts__link--primary" href="#"> подробнее</a>
                 </div>
                 <div class="discounts__img discounts__img--primary">
@@ -487,8 +489,10 @@
               <li class="discounts__item discounts__item--secondary">
                 <div class="discounts__item-wrapper discounts__item-wrapper--secondary ">
                   <div class="discounts__summary">
-                    <h3>Месяц бесплатно</h3>
-                    <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                    <div class="discounts__description">
+                      <h3>Месяц бесплатно</h3>
+                      <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                    </div>
                     <a class="discounts__link discounts__link--secondary" href="#"> подробнее</a>
                   </div>
                 </div>
@@ -496,8 +500,10 @@
               <li class="discounts__item discounts__item--secondary">
                 <div class="discounts__item-wrapper discounts__item-wrapper--secondary ">
                   <div class="discounts__summary">
-                    <h3>Скидка 20%</h3>
-                    <p>Корпоративный фитнес с&nbsp;командой</p>
+                    <div class="discounts__description">
+                      <h3>Скидка 20%</h3>
+                      <p>Корпоративный фитнес с&nbsp;командой</p>
+                    </div>
                     <a class="discounts__link discounts__link--secondary" href="#"> подробнее</a>
                   </div>
                 </div>
@@ -624,7 +630,9 @@
               </li>
               <li class="gym-contacts__item">
                 <h3>Телефон:</h3>
-                <a class="gym-contacts__tel" href="tel:88005555555">8-800-555-55-55</a>
+                <div class="gym-contacts__tel">
+                <a href="tel:88005555555">8-800-555-55-55</a>
+                </div>
               </li>
               <li class="gym-contacts__item">
                 <h3>Email:</h3>

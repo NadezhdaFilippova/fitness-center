@@ -147,8 +147,11 @@
 
 
   @include hover {
-    color: $color-sapphire;
-    border: 4px solid $color-sapphire;
+    @include hover {
+      background-color: $color-default-white;
+      box-shadow: 0 0 6px 4px $color-default-white;
+      color: $color-sapphire;
+    }
   }
 
   @include focus {
