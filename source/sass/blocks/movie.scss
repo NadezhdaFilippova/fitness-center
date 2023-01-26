@@ -11,10 +11,11 @@
     height: 0%;
     padding-top: 24.6%;
     top: 85%;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%, -25%);
   }
 
-  @media (min-width: 795px) and (max-width: $vp-1200) {
+  @media (min-width: 795px) and (max-width: 1199.5px) {
     position: absolute;
     width: 51.23%;
     height: 0%;
@@ -32,6 +33,7 @@
     padding-top: 52.2%;
     top: 0;
     left: 0;
+    transform: none;
   }
 
   @media (min-width: 324px) and (max-width: 767.5px) {
@@ -41,6 +43,7 @@
     padding-top: 56%;
     top: 0;
     left: 0;
+    transform: none;
   }
 }
 
